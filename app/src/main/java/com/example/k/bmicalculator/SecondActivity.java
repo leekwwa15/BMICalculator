@@ -27,11 +27,11 @@ public class SecondActivity extends AppCompatActivity {
                 displayResultText.setVisibility(View.VISIBLE);
                 displayResultText.setText("Under weight");
                 displayResultImage.setImageResource(R.drawable.under);
-            }else if(BMI >= 18.5 || BMI < 25){
+            } else if(BMI >= 18.5 && BMI < 25){
                 displayResultText.setVisibility(View.VISIBLE);
                 displayResultText.setText("Normal");
                 displayResultImage.setImageResource(R.drawable.normal);
-            }else if(BMI >= 25){
+            } else if(BMI >= 25){
                 displayResultText.setVisibility(View.VISIBLE);
                 displayResultText.setText("Over weight");
                 displayResultImage.setImageResource(R.drawable.over);

@@ -31,7 +31,8 @@ public class MainActivity extends AppCompatActivity {
             double BMI = 0;
             double weightValue = Double.parseDouble(editTextWeight.getText().toString());
             double heightValue = Double.parseDouble(editTextHeight.getText().toString());
-            BMI = weightValue / (heightValue * weightValue);
+            double heightInMeter = heightValue/100;
+            BMI = weightValue / (heightInMeter * heightInMeter);
 
             Intent intent = new Intent(this, SecondActivity.class);
             intent.putExtra(BMI_RESULT, BMI);
