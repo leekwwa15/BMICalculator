@@ -25,15 +25,15 @@ public class SecondActivity extends AppCompatActivity {
             double BMI = Double.parseDouble(result);
             if(BMI < 18.5){
                 displayResultText.setVisibility(View.VISIBLE);
-                displayResultText.setText("Under weight");
+                displayResultText.setText("Under weight:can improve");
                 displayResultImage.setImageResource(R.drawable.under);
             } else if(BMI >= 18.5 && BMI < 25){
                 displayResultText.setVisibility(View.VISIBLE);
-                displayResultText.setText("Normal");
+                displayResultText.setText("Normal:need not to worry");
                 displayResultImage.setImageResource(R.drawable.normal);
             } else if(BMI >= 25){
                 displayResultText.setVisibility(View.VISIBLE);
-                displayResultText.setText("Over weight");
+                displayResultText.setText("Over weight:can improve");
                 displayResultImage.setImageResource(R.drawable.over);
             }
         }
